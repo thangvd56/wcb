@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>World cup 2014</title>
+</head>
+<body>
+	<table width ="100%">
+		<tr width ="100%">
+			<td width ="10%">Mã người chơi</td>
+			<td width ="30%">Tên người chơi</td>
+			<td width ="30%">Tổng tiền đặt cược</td>
+			<td width ="20%">Số tiền thu được</td>
+			<td width ="10%">Tổng tiền nhận được</td>
+		</tr>
+		<tr>
+			{% for k in kq %}
+			<td>{{k.kqma}}</td>
+			<td>{{k.kqten}}</td>
+			<td>{{k.kqtong}}</td>
+			<td>{{k.kqlai}}</td>
+			<td>{{k.kqlay}}</td>
+		</tr>
+			{% endfor %}
+	</table>
+</body>
+</html>
